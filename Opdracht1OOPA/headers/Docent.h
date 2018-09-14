@@ -5,7 +5,6 @@
 class Docent
 {
 private:
-	std::vector<std::string> names;
 	std::string name;
 public:
 	Docent(std::string name);
