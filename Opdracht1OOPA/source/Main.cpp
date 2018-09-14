@@ -45,7 +45,7 @@ int main() {
 		std::cout << stu->getName() << " follows ";
 		for (auto i : stu->getModules()) {
 			std::cout << i->getName();
-			//"and " prints every time because the amount of ECs follows
+			//"and " prints every time because the amount of ECs follow
 			std::cout << " and ";
 		}
 		//get the amount of ECs
