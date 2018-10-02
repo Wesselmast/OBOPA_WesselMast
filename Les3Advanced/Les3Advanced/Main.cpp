@@ -15,12 +15,6 @@ int main() {
 	cList.push_back(new Farmer(new Elf()));
 	cList.push_back(new Shaman(new Elf()));
 	cList.push_back(new Soldier(new Elf()));
-	cList.push_back(new Farmer(new Orc()));
-	cList.push_back(new Shaman(new Orc()));
-	cList.push_back(new Soldier(new Orc()));
-	cList.push_back(new Farmer(new Elf()));
-	cList.push_back(new Shaman(new Elf()));
-	cList.push_back(new Soldier(new Elf()));
 
 	for (int i = 0; i < cList.size(); i++) {
 		cList[i]->render();
@@ -29,7 +23,9 @@ int main() {
 		}
 	}
 
-	for (auto& c : cList) delete c;
+	for (auto& c : cList) {
+		delete c;
+	}
 
 	std::cin.get();
 	return 0;

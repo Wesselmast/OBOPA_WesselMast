@@ -3,9 +3,8 @@
 
 class Orc : public Class {
 public:
-	Orc() {
-		name += "You're a fearsome ";
+	void render() {
+		std::cout << "Orc: ";
 	}
-
 };
 

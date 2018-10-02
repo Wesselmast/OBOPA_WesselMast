@@ -3,10 +3,11 @@
 
 class Soldier : public ClassDecorator {
 public:
-	Soldier(Class* thisClass) {
-		curClass = thisClass;		
-		curClass->name += "soldier!";
+	Soldier(Class* c) : ClassDecorator(c) {
+	}
 
+	void render() {
+		ClassDecorator::render();
+		std::cout << "I'm a brave soldier!" << std::endl;
 	}
 };
-

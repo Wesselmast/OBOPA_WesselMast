@@ -5,7 +5,10 @@ class ClassDecorator : public Class {
 protected:
 	Class* curClass;
 public:
-	void render() {
+	ClassDecorator(Class* c) {
+		curClass = c;
+	}
+	virtual void render() {
 		curClass->render();
 	}
 };

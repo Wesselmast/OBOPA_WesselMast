@@ -3,10 +3,12 @@
 
 class Shaman : public ClassDecorator {
 public:
-	Shaman(Class* thisClass) {
-		curClass = thisClass;
-		curClass->name += "shaman!";
+	Shaman(Class* c) : ClassDecorator(c) {
+	}
 
+	void render() {
+		ClassDecorator::render();
+		std::cout << "I'm a fearsome shaman!" << std::endl;
 	}
 };
 

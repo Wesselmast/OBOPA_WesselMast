@@ -3,8 +3,11 @@
 
 class Farmer : public ClassDecorator {
 public:
-	Farmer(Class* thisClass) {
-		curClass = thisClass;
-		curClass->name += "farmer!";
+	Farmer(Class* c) : ClassDecorator(c) {
+	}
+
+	void render() {
+		ClassDecorator::render();
+		std::cout << "I'm a healthy farmer!" << std::endl;
 	}
 };

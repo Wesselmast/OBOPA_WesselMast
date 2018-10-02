@@ -3,9 +3,8 @@
 #include <string>
 
 class Class {
-public:
+protected:
 	std::string name;
-	virtual void render() {
-		std::cout << name << std::endl;
-	}
+public:
+	virtual void render() = 0;
 };
