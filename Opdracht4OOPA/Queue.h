@@ -50,7 +50,5 @@ namespace wes {
 		int size() const {
 			return len;
 		}
-
 	};
 };
-

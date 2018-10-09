@@ -1,7 +1,6 @@
 #include "Sort.h"
 #include "Queue.h"
 #include <algorithm>
-#include <functional>
 
 template<typename T>
 void print(std::vector<T> v) {
@@ -64,7 +63,9 @@ int main() {
 			v2.emplace_back(c);
 		}
 	}
+	std::cout << "- First half: ";
 	print(v1);
+	std::cout << "- Second half: ";
 	print(v2);
 #pragma endregion
 	std::cout << "\nUppercase assignment:" << std::endl;
@@ -95,8 +96,8 @@ int main() {
 	}
 	print(_numbers1);
 #pragma endregion
-	std::cout << "\nEqual or Odd assignment:" << std::endl;
-#pragma region are elements equal?
+	std::cout << "\nEven or Odd assignment:" << std::endl;
+#pragma region even or odd?
 	for (auto& n : numbers) {
 		if (((int)n) % 2 == 0) {
 			std::cout << "Even, ";
@@ -121,7 +122,6 @@ int main() {
 	std::cout << "Product: " << product << std::endl;
 
 #pragma endregion
-
 
 	std::cin.get();
 	return 0;
