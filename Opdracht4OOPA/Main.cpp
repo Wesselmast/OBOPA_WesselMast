@@ -120,7 +120,6 @@ int main() {
 	std::cout << "Sum: " << sum << std::endl;
 	std::cout << "Average: " << average << std::endl;
 	std::cout << "Product: " << product << std::endl;
-
 #pragma endregion
 
 	std::cin.get();
